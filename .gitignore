@@ -1,7 +1,14 @@
-app_exp_change.sh
-app_export.sh
-app_import.sh
-ci_cd.sh
-conn.ps1
-git_conn.sh
-log_changes.sh
+# app_exp_change.sh
+# app_export.sh
+# app_import.sh
+# ci_cd.sh
+# conn.ps1
+# git_conn.sh
+# log_changes.sh
+
+
+# Ignore all shell scripts
+*.sh
+ 
+# Ignore all PowerShell scripts
+*.ps1

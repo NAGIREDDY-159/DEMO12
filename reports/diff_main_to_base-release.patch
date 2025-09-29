@@ -1,0 +1,24 @@
+diff --git a/src/database/wksp_ebs2cloud_migration/apex_apps/f201/f201.sql b/src/database/wksp_ebs2cloud_migration/apex_apps/f201/f201.sql
+index 170b4ef..bd3ee91 100644
+--- a/src/database/wksp_ebs2cloud_migration/apex_apps/f201/f201.sql
++++ b/src/database/wksp_ebs2cloud_migration/apex_apps/f201/f201.sql
+@@ -1239,18 +1239,7 @@ wwv_flow_imp_page.create_page_item(
+   'unchecked_value', '',
+   'use_defaults', 'Y')).to_clob
+ );
+-wwv_flow_imp_page.create_page_process(
+- p_id=>wwv_flow_imp.id(9340312219792515)
+-,p_process_sequence=>10
+-,p_process_point=>'AFTER_SUBMIT'
+-,p_process_type=>'NATIVE_INVOKE_API'
+-,p_process_name=>'Set Username Cookie'
+-,p_attribute_01=>'PLSQL_PACKAGE'
+-,p_attribute_03=>'APEX_AUTHENTICATION'
+-,p_attribute_04=>'SEND_LOGIN_USERNAME_COOKIE'
+-,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+-,p_internal_uid=>9340312219792515
+-);
++
+ wwv_flow_imp_shared.create_invokeapi_comp_param(
+  p_id=>wwv_flow_imp.id(9340873197792518)
+ ,p_page_process_id=>wwv_flow_imp.id(9340312219792515)

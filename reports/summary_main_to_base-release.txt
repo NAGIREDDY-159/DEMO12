@@ -1,0 +1,2 @@
+ .../wksp_ebs2cloud_migration/apex_apps/f201/f201.sql        | 13 +------------
+ 1 file changed, 1 insertion(+), 12 deletions(-)
